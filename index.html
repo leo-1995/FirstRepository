@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Gitpage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .aaa {
+      width: 300px;
+      height: 200px;
+      background-color: rgb(55, 132, 0);
+      margin: 0 auto;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .aaa h3 {
+      padding-top: 30px;
+    }
+
+    button {
+      margin-top: 30px;
+      width: 60px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="aaa">
+    <h3 class="title">welcome to git!</h3>
+    <h3 class='dsp'>0</h3>
+    <button class="btn">click +1</button>
+  </div>
+
+</body>
+<script>
+  let btn = document.querySelector('.btn');
+  let box = document.querySelector('.dsp');
+  let num = 0;
+  console.dir(box);
+  btn.addEventListener('click', function () {
+    num += 1;
+    box.innerText = num;
+  })
+
+</script>
+
+</html>
